@@ -1,4 +1,3 @@
-/* ---------- Hero ---------- */
 .hero{padding:90px 0 100px;position:relative;overflow:hidden}
 .hero::before{
   content:'';position:absolute;inset:0;
@@ -39,7 +38,6 @@
 .stack:hover .sheet:nth-child(2){transform:rotate(6deg) translateY(-4px)}
 .stack:hover .sheet:nth-child(3){transform:rotate(0deg) translateY(-4px)}
 
-/* ---------- Seção produtos ---------- */
 .section-head{display:flex;flex-direction:column;margin-bottom:24px}
 .toolbar{
   display:flex;flex-wrap:wrap;gap:14px;align-items:center;
@@ -79,7 +77,6 @@
   box-shadow:0 8px 22px -10px rgba(168,85,247,.8);
 }
 
-/* ---------- Grid + cards ---------- */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
@@ -136,7 +133,6 @@
   margin-top:24px;
 }
 
-/* ---------- Sobre ---------- */
 .sobre{background:linear-gradient(180deg,transparent 0%,rgba(168,85,247,.05) 100%);position:relative}
 .sobre::before{
   content:'';position:absolute;inset:0;pointer-events:none;
@@ -161,7 +157,6 @@
 .duo h3{margin-bottom:8px;color:var(--ink)}
 .duo p{color:var(--ink-soft);font-size:.95rem}
 
-/* ---------- Shopee ---------- */
 .shopee .shopee-wrap{
   display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;
   padding:48px;border-radius:24px;
@@ -199,7 +194,6 @@
 }
 .links a:hover::after{transform:translateX(4px);color:var(--neon-2)}
 
-/* ---------- Responsivo específico da home ---------- */
 @media (max-width:960px){
   .hero .wrap,
   .sobre .wrap,
