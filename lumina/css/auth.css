@@ -1,4 +1,3 @@
-/* ---------- Auth (login / cadastro) ---------- */
 .auth{
   min-height:100vh;display:grid;grid-template-columns:1fr 1fr;
 }
@@ -71,7 +70,6 @@
   font-size:.8rem;color:var(--ink-mute);text-align:center;line-height:1.5;
 }
 
-/* ---------- Responsivo específico do auth ---------- */
 @media (max-width:960px){
   .auth{grid-template-columns:1fr}
   .auth .lado{padding:32px;min-height:280px;border-right:0;border-bottom:1px solid var(--line)}
