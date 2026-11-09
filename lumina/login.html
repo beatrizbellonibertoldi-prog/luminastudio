@@ -10,20 +10,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/auth.css">
-<!-- Correção provisória: o atributo [hidden] estava sendo anulado por classes com display
-     (ex.: o campo "Seu nome" aparecia na aba Entrar). Mova para o css/base.css quando puder. -->
+<link rel="stylesheet" href="../lumina/css/base.css">
+<link rel="stylesheet" href="../lumina/css/auth.css">
+
 <style>[hidden]{display:none!important}</style>
 </head>
 <body>
 
 <main class="auth">
   <div class="lado">
-   
-    
-       
-
     <div class="auth-copy">
       <h1>Iluminando ideias com criatividade e inovação.</h1>
       <p>Entre para montar seu carrinho, personalizar produtos e enviar seu pedido pelo WhatsApp.</p>
@@ -34,7 +29,6 @@
 
   <div class="form">
     <div class="box">
-      <!-- Era <header>: o seletor global "header" do base.css aplicava sticky/blur/borda aqui -->
       <div class="auth-head">
         <h2 id="authTitle">Entrar na conta</h2>
         <p class="sub" id="authSub">Bem-vindo de volta à Lumina Studio.</p>
@@ -70,7 +64,7 @@
 
       <button class="btn ghost" id="visitante" type="button">Continuar como visitante</button>
 
-      <p class="auth-note">Seus dados de login são armazenados apenas neste navegador (demonstração). Não use senhas reais.</p>
+      <p class="auth-note">Seus dados de login são armazenados apenas neste navegador. Não use senhas reais.</p>
     </div>
   </div>
 </main>
