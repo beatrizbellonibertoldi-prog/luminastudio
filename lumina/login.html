@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entrar | Lumina Studio</title>
+<meta name="description" content="Entre ou crie sua conta na Lumina Studio para montar seu carrinho e enviar o pedido pelo WhatsApp.">
+<meta name="theme-color" content="#0a0713">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E✨%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../lumina/css/base.css">
+<link rel="stylesheet" href="../lumina/css/auth.css">
+
+<style>[hidden]{display:none!important}</style>
+</head>
+<body>
+
+<main class="auth">
+  <div class="lado">
+    <div class="auth-copy">
+      <h1>Iluminando ideias com criatividade e inovação.</h1>
+      <p>Entre para montar seu carrinho, personalizar produtos e enviar seu pedido pelo WhatsApp.</p>
+    </div>
+     
+    <p class="auth-foot">Papelaria · Design · Comunicação Visual</p>
+  </div>
+
+  <div class="form">
+    <div class="box">
+      
+      <div class="auth-head">
+        <h2 id="authTitle">Entrar na conta</h2>
+        <p class="sub" id="authSub">Bem-vindo de volta à Lumina Studio.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Entrar ou criar conta">
+        <button class="on" id="tabEntrar" type="button" role="tab" aria-selected="true">Entrar</button>
+        <button id="tabCriar" type="button" role="tab" aria-selected="false">Criar conta</button>
+      </div>
+
+      <form id="authForm" novalidate>
+        <label class="field" id="nomeWrap" hidden>
+          <span>Seu nome</span>
+          <input id="aNome" type="text" placeholder="Como devemos te chamar?" autocomplete="name">
+        </label>
+
+        <label class="field">
+          <span>E-mail</span>
+          <input id="aEmail" type="email" placeholder="voce@exemplo.com" required autocomplete="email">
+        </label>
+
+        <label class="field">
+          <span>Senha</span>
+          <input id="aSenha" type="password" placeholder="Mínimo 6 caracteres" required minlength="6" autocomplete="current-password">
+        </label>
+
+        <p class="msg" id="aMsg" role="alert"></p>
+
+        <button class="btn" type="submit" id="aBtn">Entrar</button>
+      </form>
+
+      <div class="auth-divider" aria-hidden="true"><span>ou</span></div>
+
+      <button class="btn ghost" id="visitante" type="button">Continuar como visitante</button>
+
+      <p class="auth-note">Seus dados de login são armazenados apenas neste navegador (demonstração projeto bia). Não use senhas reais.</p>
+    </div>
+  </div>
+</main>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
